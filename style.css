@@ -1,0 +1,18 @@
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+:root{
+    --white: #fff;
+    --light: #eeeded;
+    --orange: #FFA16C;
+
+} */
+.Products{
+    padding-left: 3%;
+}
+.cart{
+    padding-right: 3%;
+    margin-top: 20%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
