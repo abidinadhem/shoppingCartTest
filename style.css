@@ -1,18 +1,96 @@
-/* @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
-:root{
-    --white: #fff;
-    --light: #eeeded;
-    --orange: #FFA16C;
 
-} */
-.Products{
+
+.container{
+    display: flex;
+    justify-content: space-around;
+
+}
+.products{
     padding-left: 3%;
+    border-radius: 5%;
+    background-color: yellowgreen;
 }
 .cart{
     padding-right: 3%;
-    margin-top: 20%;
+    background-color: yellow;
+    border-radius: 5%;
 }
-.container{
-    display: flex;
-    justify-content: space-between;
+.button {
+	display: flex;
+	height: 50px;
+	padding: 0;
+	background: #009578;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	overflow: hidden;
+	font-family: "Quicksand", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
 }
+
+.button:hover {
+	background: #008168;
+}
+
+.button:active {
+	background: #006e58;
+}
+
+.button__text,
+.button__icon {
+	display: inline-flex;
+	align-items: center;
+	padding: 0 24px;
+	color: #fff;
+	height: 100%;
+}
+
+.button__icon {
+	font-size: 1.5em;
+	background: rgba(0, 0, 0, 0.08);
+}
+.like-button {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .like-button i {
+    font-size: 2em;
+    color: gray;
+  }
+  
+  .liked i {
+    color: red;
+  }
+
+  .like-button {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: black;
+    font-size: 2em;
+}
+
+.dislike-button {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: black;
+    font-size: 1.5em;
+}
+.far {
+    font-size: 40px;
+    cursor: pointer;
+    color: red;
+  }
+  .fas {
+    font-size: 40px;
+    cursor: pointer;
+    color: red;
+  }

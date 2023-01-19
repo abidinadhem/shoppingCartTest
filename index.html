@@ -6,43 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+
+    <title>shopping cart</title>
 </head>
 <body>
+
 <div class="container">
-    <div class="Products">
+    <div class="products">
         <img class="ps4" id="img1" src="ps4.png" alt="ps4" width="250px" height="150px">
-        <h1 id="">PS4 Controller Price</h1>
-        <H2 id="prix1">100</H2>
-        <button id="addps4">+Add to Cart</button>
+        <h3 id="">PS4 Controller Price</h3>
+        <h4 id="prix1">100</H4>
+
+        <button class="button" id="addps4"><span class="button__text">Add to Cart</span>
+            <span class="button__icon">
+                <ion-icon name="add-circle-outline"></ion-icon>
+            </span>
+        </button>
+        <i onclick="myFunction(this)" class="far fa-heart"></i>
 
 
         <br>
-        <img class="xbox" src="xbox.png" alt="xbox"  width="250px" height="150px">
-        <h1 id="">Xbox Controller Price</h1>
-        <H2 id="">90$</H2>
-        <button id="addxbox">+Add to Cart</button>
-
+        <img class="xbox" src="xbox.png" id="img2" alt="xbox"  width="250px" height="150px">
+        <h3 id="">Xbox Controller Price</h3>
+        <H4 id="prix2">90</H4>
+        <button class="button" id="addxbox"><span class="button__text">Add to Cart</span>
+            <span class="button__icon">
+                <ion-icon name="add-circle-outline"></ion-icon>
+            </span>
+        </button>
+        <i onclick="myFunction(this)" class="far fa-heart"></i>
 
         <br>
-        <img class="nintendo" src="nintendo.png" alt="nintendo"  width="220px" height="150px">
-        <h1 id="">nintendo Controller Price</h1>
-        <H2 id="">80$</H2>
-        <button id="addnintendo">+Add to Cart</button>
+        <img class="nintendo" src="nintendo.png" id="img3" alt="nintendo"  width="250px" height="150px">
+        <h3 id="">nintendo Controller Price</h3>
+        <H4 id="prix3">80</H4>
+        <button class="button" id="addnintendo"><span class="button__text">Add to Cart</span>
+            <span class="button__icon">
+                <ion-icon name="add-circle-outline"></ion-icon>
+            </span>
+        </button>
+        <i onclick="myFunction(this)" class="far fa-heart"></i>
     </div>
 
     <div class="cart">
-        <img id="imgvide" src="" alt="" width="200" height="150">
+        <img id="imgvide" src="" alt="" width="250px" height="150px">
         <br>
-        <button id="plus" onclick="increment()">+</button>
-        <h2 id="count">10</h2>
+        <button id="plus" onclick="plus()">+</button>
+        <h3 id="count">1</h3>
         <br>
-        <button id="moins">-</button>
+        <button id="moins" onclick="moins()">-</button>
         <br>
-        <h2 id="total">Total</h2>
+        <h2 id="tt">Total</h2>
+        <h2 id="total">-</h2>
+        <br>
+        <button id="clear" src="" onclick="clearContent()" style="font-size:24px"><i class="fa fa-trash" style="color: blue;"></i></button>
     </div>
 
 </div>
+<div>
+    <i class="heart fa fa-heart-o"></i>
+  </div>
 <script src="index.js"></script>
+
 </body>
 </html>
